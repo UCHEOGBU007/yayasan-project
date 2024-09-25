@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "montserrat",sans-serif;
+}
+
+header{
+	background-color: #00747A;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+}
+
+.identity{
+	display: flex;
+	padding: 0 10%;
+}
+
+#company-frontal{
+	color: white;
+	margin-top: 20px;
+	padding: 0 10px;
+
+}
+
+
+#companyImage{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+}
+
+
+ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    list-style-type: none; 
+    gap: 60px;
+}
+
+
+
+li a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: bolder;
+	font-size: 1.1rem;
+}
+
+
+ul #donation-button{
+	background-color: #EDE8CA;
+	color: #00747A;
+	text-decoration: none;
+	padding: 10px 40px 10px 40px;
+	border-radius: 20px;
+	font-weight: bolder;
+	cursor: pointer;
+}
+
+#list-icon{
+	color: whitesmoke;
+	font-size: 1.8rem;
+	display: none;	
+}
+
+#donation-button:hover{
+	background-color: #00747A;
+	color: #EDE8CA ;
+	cursor: pointer;
+}
+
+
+select, option{
+	border: none;
+	outline: none;
+	color: whitesmoke;
+	background-color: #00747A ;
+	font-weight: bolder;
+	font-size: 1.1rem;
+}
+
+
+main{
+	background-image: url(turts.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+
+article{
+	padding: 130px 0 0 60px;
+	color: whitesmoke;
+
+}
+
+article h3{
+	font-family: sans-serif;
+	font-weight: bolder;
+	font-size: 1.6rem ;
+	word-spacing: 5px;
+}
+
+article p{
+	padding: 30px 40px 0 0;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	font-weight: 500;
+	font-family: cursive;
+	word-break: break-word;
+
+}
+
+main article a{
+	margin-top: 50px;
+	text-decoration: none;
+	background-color: #EDE8CA;
+	color: #00747A;
+	padding: 10px 20px 10px 20px;
+	font-weight: bold;
+	border-radius: 10px;
+
+}
+main article a:hover{
+	background-color: whitesmoke;
+}
+
+
+footer{
+	background-color: black;
+	height: 80px;
+}
+
+.footer .fa-solid {
+	color: white;
+	float: right;
+	margin-left: 30%;
+}
+
+.footer p{
+	color: whitesmoke;
+	text-align: center;
+	justify-items: center;
+	padding-top: 30px;
+
+}
+
+.smith{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-items: center;
+	justify-content: right;
+	height: 400px;
+	width: 100%;
+	top: 0px;
+	background-color: gray;
+	color: white;
+}
+
+
+
+
+
+
+@media(max-width: 1665px){
+	ul{
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center; 
+	    list-style-type: none; 
+		gap: 40px;
+	}
+}
+
+
+@media(max-width: 1512px){
+	ul{
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center; 
+	    list-style-type: none; 
+		gap: 20px;
+	}
+}
+
+
+
+@media(max-width: 1392px){
+	ul li a{
+	    display: none;
+	}
+
+	#list-icon{
+		display: block;
+		font-size: 1.8rem;
+	}
+}
+
+
+@media(max-width: 960px){
+	select{
+		display: none;
+	}
+	#list-icon{
+		display: block;
+		font-size: 2.5rem;
+		padding-left: 200px;
+	}
+
+
+}
+
+
+@media(max-width: 825px){
+	#company-frontal{
+		display: none;
+	}
+	#list-icon{
+		display: block;
+		font-size: 2.5rem;
+		padding-left: 100px;
+	}
+
+}
+
+
+@media(max-width: 653px){
+	ul #donation-button{
+		display: block;
+	}
+	#list-icon{
+		display: block;
+		font-size: 2.5rem;
+		padding-left: 100px;
+	}
+
+}
+
+@media(max-width: 588px){
+	#list-icon{
+		display: block;
+		font-size: 2rem;
+		padding-left: 60px;	
+	}
+	main{
+		background-image: url(turts.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+	}
+
+
+}
+
+
+@media(max-width: 512px){
+	#list-icon{
+		display: block;
+		font-size: 2rem;
+		padding-left: 50px;	
+	}
+	main{
+		background-image: url(turts.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+ 	}
+
+}
+
+
+@media(max-width: 471px){
+	#list-icon{
+		display: block;
+		font-size: 2rem;
+		padding-left: 20px;	
+	}
+	ul #donation-button{
+		padding-left: 2px 5px 2px 5px;
+		margin-left: 10px;
+	}
+	#companyImage{
+		width: 45px;
+		height: 45px;
+		margin-right: 30px;
+	}	
+
+    main{
+		background-image: url(turts.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 100vh;
+   }
+
+}
+
+
+@media (max-width: 600px){
+  .activeMenu {
+    top: 80px;
+    transform: scaleX(1);
+  }
+}
